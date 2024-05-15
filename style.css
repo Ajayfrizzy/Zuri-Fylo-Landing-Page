@@ -12,7 +12,6 @@ body{
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
     max-width: 1440px;
-    padding-top: 2rem;
     font-weight: 400;
     color: hsl(243, 87%, 12%);
 }
@@ -22,21 +21,6 @@ header, .first-section,.prl, .third-section{
     padding: 0 50px;
 }
 
-/*  Primary  */
-color{
-    /* Very Dark Blue  */color: hsl(243, 87%, 12%);
-    /* Desaturated Blue */ color: hsl(238, 22%, 44%);   
-
-/*   Accent   */
-
-/*  Bright Blue  */color: hsl(224, 93%, 58%);
-/*  Moderate Cyan:  */ color: hsl(170, 45%, 43%);
-
-/*   Neutral   */
-
-/* Light Grayish Blue  */ color: hsl(240, 75%, 98%);
-/* Light Gray*/ color: hsl(0, 0%, 75%);
-}
 
 /* Styling for nav links*/
 
@@ -44,6 +28,7 @@ color{
     margin-top: 1.5rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
 }
@@ -258,6 +243,12 @@ footer{
     border: 1px solid rgb(116, 172, 246);
 }
 
+footer img{
+    filter: brightness(0) invert(1);
+}
+
+
+
 /* styling for the media query */
 
 @media screen and (max-width: 600px){
@@ -337,6 +328,19 @@ footer{
         text-align: justify;
     }
 
+    .circle-image{
+        align-items: center;
+    }
+
+    .founder{
+        padding-top: .4rem;
+        font-size: .6rem;
+    }
+
+    .founder p{
+        font-size: 0.5rem;
+    }
+
     .third-section {
         flex-direction: column;
     }
@@ -366,11 +370,6 @@ footer{
 
     .d-fl{
         flex-direction: column;
-    }
-
-    footer img{
-        width: 70%;
-        filter: brightness("100"), invert(1);
     }
 
     .pt{
