@@ -10,7 +10,7 @@
 
 body{
     font-size: 16px;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Raleway', 'Open Sans', sans-serif;
     max-width: 1440px;
     font-weight: 400;
     color: hsl(243, 87%, 12%);
@@ -21,16 +21,19 @@ header, .first-section,.prl, .third-section{
     padding: 0 50px;
 }
 
-
 /* Styling for nav links*/
+
+
+.top-logo img, .footer-logo img{
+    width: 10vw;
+}
 
 .nav-links{
     margin-top: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .right-link{
@@ -59,7 +62,7 @@ ul li{
 
 .first-section{
     display: flex;
-    margin: 2.5rem auto 0;
+    margin: 4rem auto 0;
 }
 
 .hero-top{
@@ -72,8 +75,12 @@ ul li{
 }
 
 h2, .p, form{
-    width: 70%;
+    width: 80%;
     padding: 0.7rem 0;
+}
+
+.h2{
+    font-size: 2.2rem;
 }
 
 form input[type="email"]{
@@ -123,8 +130,10 @@ button:active{
 }
 
 .second-hero a{
-    text-decoration: underline;
-    color: hsl(170, 45%, 43%);
+    text-decoration: none;
+    color: rgb(60, 159, 143);
+    border-bottom: 1px solid rgb(60, 159, 143);
+    padding-bottom: .3rem;
 }
 
 #second-img{
@@ -132,8 +141,8 @@ button:active{
 }
 
 .small-box{
-    width: 46%;
-    margin-top: 2rem;
+    width: 60%;
+    margin-top: 2.5rem;
     font-size: 0.7rem;
     padding: 1.5rem;
     box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.1);
@@ -143,26 +152,34 @@ button:active{
     padding-top: .9rem;
 }
 
+#font-p{
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    font-family: sans-serif;
+}
+
 .circle-image{
     display: flex;
+    align-items: center;
     padding-top: 1rem;
 }
 
 .circle-image img{
-    border-radius: 50%;
-    width: 15%;
-    height: 15%;
+    border-radius: 100%;
+    width: 20%;
+    height: 20%;
 }
 
 .founder{
     padding-left: .6rem;
     padding-top: .6rem;
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
 .founder p{
     padding-top: .2rem;
-    font-size: .6rem;
+    font-size: .8rem;
 }
 
 /* Styling for third section */
@@ -225,25 +242,39 @@ footer{
     padding-top: .8rem;
 }
 
+#img-pt-1, #img-pt-2{
+    padding-right: 1rem;
+}
+
 #social{
     display: flex;
 }
 
-#social li{
-    padding: .8rem 1rem 0;
+ul li a .fa-brands{
+    width: 2rem;
+    height: 2rem;
+    padding: .4rem;
+    border: 0.2px solid #c9c9c9;
+    border-radius: 100%;
 }
 
-#social i{
-    border-radius: 50%;
-    border: 1px solid #fff;
-    padding: .6rem;
+ul li .fa-brands{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#social li{
+    padding: .9rem .9rem 0 0;
 }
 
 #social i:hover{
     border: 1px solid rgb(116, 172, 246);
 }
 
-footer img{
+.footer-logo img{
     filter: brightness(0) invert(1);
 }
 
@@ -251,7 +282,7 @@ footer img{
 
 /* styling for the media query */
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px), (max-width: 999.99px){
     body{
         padding-top: 0;
     }
@@ -259,9 +290,8 @@ footer img{
         padding: 0 1.3rem;
     }
 
-    nav img {
-        width: 30%;
-        height: 15%;
+    .top-logo img{
+        width: 25vw;
     }
 
     .right-link a {
@@ -279,8 +309,8 @@ footer img{
         text-align: center;
     }
 
-    .p{
-        font-size: 1rem;
+    .h2{
+        font-size: 1.5rem;
     }
 
     form input[type="email"] {
@@ -303,7 +333,7 @@ footer img{
     }
 
     .p{
-        font-size: 1rem;
+        font-size: 1.2rem;
         text-align: justify;
         padding: 0.7rem .5rem;
         width: 100%;
@@ -334,15 +364,11 @@ footer img{
 
     .founder{
         padding-top: .4rem;
-        font-size: .6rem;
-    }
-
-    .founder p{
-        font-size: 0.5rem;
     }
 
     .third-section {
         flex-direction: column;
+        width: 100%;
     }
 
     .third-hero{
@@ -368,6 +394,10 @@ footer img{
         margin-bottom: 3rem;
     }
 
+    .footer-logo img{
+        width: 50vw;
+    }
+
     .d-fl{
         flex-direction: column;
     }
@@ -380,15 +410,9 @@ footer img{
         padding-top: 1rem;
     }
 
+
     #social{
         padding-top: 4rem;
         margin: auto;
     }
 }
-
-
-
-
-
-
-
