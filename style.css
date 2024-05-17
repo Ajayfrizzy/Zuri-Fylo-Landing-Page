@@ -394,6 +394,10 @@ ul li .fa-brands{
         margin-bottom: 3rem;
     }
 
+    footer {
+        padding: 4rem 2rem;
+    }
+
     .footer-logo img{
         width: 50vw;
     }
