@@ -1,422 +1,463 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-size: 16px;
-    font-family: 'Raleway', 'Open Sans', sans-serif;
-    max-width: 1440px;
-    font-weight: 400;
-    color: hsl(243, 87%, 12%);
+body {
+  font-size: 16px;
+  font-family: "Raleway", "Open Sans", sans-serif;
+  max-width: 1440px;
+  font-weight: 400;
+  color: hsl(243, 87%, 12%);
 }
 
-/*   Padding on both left and right     */
-header, .first-section,.prl, .third-section{
-    padding: 0 50px;
+/*  This is the styling that gives Padding on both left and right of the content on the page including the header navlinks     */
+header,
+.first-hero-section,
+.second-hero-section {
+  padding: 0 50px;
 }
 
-/* Styling for nav links*/
+/* This is the styling for the header links */
 
-
-.top-logo img, .footer-logo img{
-    width: 10vw;
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20vh;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
-.nav-links{
-    margin-top: 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 400;
+.top-logo {
+  width: 6.5rem;
 }
 
-.right-link{
-    display: flex;
+.top-logo img {
+  width: 100%;
+  height: auto;
 }
 
-ul li{
-    list-style-type: none;
+.header-right-links {
+  display: flex;
+  gap: 3rem;
 }
 
-.right-link a{
-    padding: 0 30px;
-    text-decoration: none;
-    color: hsl(243, 87%, 12%);
+li {
+  list-style: none;
 }
 
-.right-link a:hover{
-    background-color: hsl(243, 87%, 12%);
-    color: #fff;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 5px;
+.header-right-links a {
+  text-decoration: none;
+  color: hsl(238, 22%, 44%);
 }
 
-/* Styling for first section  */
-
-.first-section{
-    display: flex;
-    margin: 4rem auto 0;
+.header-right-links a:hover {
+  color: hsl(224, 93%, 58%);
 }
 
-.hero-top{
-    width: 100%;
-    margin: auto;
+/* This is the styling for the first hero section and second but little */
+
+.first-hero-section,
+.second-hero-section {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin: 7rem 0;
 }
 
-.img img{
-    width: 100%;
+/* this styling here is for first hero section and the second one but littl */
+
+.first-hero-left,
+.first-hero-right img,
+.second-hero-left,
+.second-hero-right img {
+  width: 100%;
 }
 
-h2, .p, form{
-    width: 80%;
-    padding: 0.7rem 0;
+/* This styling is for fuirst hero section and second hero section */
+
+h1,
+.first-hero-left p,
+h2,
+.second-hero-left p {
+  width: 80%;
 }
 
-.h2{
-    font-size: 2.2rem;
+h1 {
+  font-size: 2rem;
 }
 
-form input[type="email"]{
-    color: #000;
-    padding: 10px 10px 10px 15px;
-    width: 60%;
-    border: 1px solid lightgray;
-    border-radius: 3px;
+.first-hero-left p {
+  font-size: 1.2rem;
+  padding: 1rem 0 1.2rem;
+  color: hsl(238, 22%, 44%);
+  font-family: sans-serif;
 }
 
-button{
-    width: 30%;
-    background-color: hsl(224, 93%, 58%);
-    color: #fff;
-    padding: 10px;
-    border: none;
-    margin-left: 1rem;
-    border-radius: 3px;
-    cursor: pointer;
+/* styling for the input element and the button element in first hero section */
+
+.form-top{
+  display: flex;
 }
 
-button:hover{
-    background-color: rgb(8, 132, 240);
+#input1{
+  width: 20rem;
+  height: 7vh;
+  margin-right: 0.5rem;
 }
 
-button:active{
-    background-color: rgb(4, 107, 198);
+.form-field input[type="email"] {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  border: 1px solid hsl(0, 0%, 75%);
+  border-radius: 0.1rem;
+  outline: none;
 }
 
-/* Second section styling */
-
-.second-section{
-    background-image: url("./images/bg-curve-desktop.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.btn{
+  width: 15rem;
+  height: 7vh;
 }
 
-.prl{
-    display: flex;
-    margin-top: 8em;
+.form-field button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  color: #fff;
+  background-color: hsl(224, 93%, 58%);
+  border-radius: 0.1rem;
+  cursor: pointer;
 }
 
-.second-hero{
-    width: 100%;
-    margin: 6rem auto 5rem;
+#error-msg-top{
+  color: rgb(255, 0, 0);
+  padding-top: 0.5rem;
+  font-size: small;
 }
 
-.second-hero a{
-    text-decoration: none;
-    color: rgb(60, 159, 143);
-    border-bottom: 1px solid rgb(60, 159, 143);
-    padding-bottom: .3rem;
+/* This is the styling for the second hero section */
+.second-hero-section {
+  margin: 0;
+  background: url("./images/bg-curve-desktop.svg") center no-repeat;
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 5rem;
 }
 
-#second-img{
-    margin: 6rem auto 5rem;
+h2 {
+  padding-bottom: 1.2rem;
+  font-size: 2rem;
 }
 
-.small-box{
-    width: 60%;
-    margin-top: 2.5rem;
-    font-size: 0.7rem;
-    padding: 1.5rem;
-    box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.1);
+.second-hero-left p {
+  padding: 0.6rem 0;
+  font-size: 1.2rem;
+  color: hsl(238, 22%, 44%);
+  font-family: sans-serif;
 }
 
-.small-box p{
-    padding-top: .9rem;
+.text-with-arrow-img {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  width: fit-content;
+  border-bottom: 1px solid hsl(170, 45%, 43%);
+  margin-top: 0.8rem;
 }
 
-#font-p{
+.text-with-arrow-img a {
+  text-decoration: none;
+  color: hsl(170, 45%, 43%);
+}
+
+.text-with-arrow-img p {
+  width: fit-content;
+  font-size: 1rem;
+  color: hsl(170, 45%, 43%);
+  padding: 0.2rem 0;
+  font-family: sans-serif;
+}
+
+.arrow-img {
+  background-image: url("./images/icon-arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1rem;
+  height: 1rem;
+}
+
+.small-box-with-shadow {
+  width: 55%;
+  box-shadow: 2px 3px 0.8rem rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.small-box-with-shadow p {
+  font-size: 1rem;
+  width: 100%;
+  font-family: sans-serif;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+
+.circle-image-with-text {
+  display: flex;
+  gap: 0.7rem;
+  margin-top: 0.9rem;
+}
+
+.avatar-img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.avatar-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.image-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 60%;
+  height: auto;
+}
+
+.image-text p {
+  padding: 0;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+/* This is the styling for the third hero section */
+.third-hero-section {
+  display: flex;
+  align-items: center;
+  background-color: hsl(238, 22%, 44%);
+  color: #fff;
+  height: 55vh;
+  padding: 0 50px;
+}
+
+.third-hero-left,
+.third-hero-right {
+  width: 100%;
+}
+
+.third-hero-left h3,
+.third-hero-left p {
+  width: 70%;
+}
+
+.third-hero-left h3 {
+  font-size: 2rem;
+}
+
+.third-hero-left p {
+  padding-top: 1.4rem;
+  font-size: 1.1rem;
+  font-family: sans-serif;
+  line-height: 1.7;
+}
+
+ #input2 {
+  width: 80%;
+}
+
+.btn2 button {
+  margin-top: 0.7rem;
+}
+
+/* This is the styling for footer */
+
+footer {
+  background-color: hsl(243, 87%, 12%);
+  color: #fff;
+  font-weight: 500;
+  padding: 3rem 10rem 3rem 50px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+footer img {
+  filter: brightness(0) invert(1);
+}
+
+.footer-logo {
+  width: 6.5rem;
+  height: 3rem;
+}
+
+.footer-logo img {
+  width: 100%;
+}
+
+.d-fl {
+  display: flex;
+  justify-content: space-between;
+}
+
+.d-fl a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.d-fl a:hover {
+  color: hsl(224, 93%, 58%);
+}
+
+.d-fl ul li {
+  padding: 0.6rem 0;
+}
+
+.phone-icon img {
+  padding-right: 0.8rem;
+}
+
+.social {
+  display: flex;
+  gap: 2rem;
+}
+
+.social i {
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+}
+
+.fa-brands {
+  border-radius: 50%;
+  border: 1px solid hsl(240, 75%, 98%);
+  padding: 0.4rem;
+  width: 100%;
+  height: 100%;
+}
+
+.fa-brands:hover {
+  border: 1px solid hsl(224, 93%, 58%);
+}
+
+@media screen and (max-width: 600px), (max-width: 999.99px) {
+  header,
+  .first-hero-section,
+  .second-hero-section {
+    padding: 0 20px;
+  }
+  .nav-links {
     font-size: 0.9rem;
-    font-weight: 500;
-    line-height: 1.5rem;
-    font-family: sans-serif;
-}
-
-.circle-image{
-    display: flex;
-    align-items: center;
-    padding-top: 1rem;
-}
-
-.circle-image img{
-    border-radius: 100%;
-    width: 20%;
-    height: 20%;
-}
-
-.founder{
-    padding-left: .6rem;
-    padding-top: .6rem;
-    font-size: 1rem;
-}
-
-.founder p{
-    padding-top: .2rem;
-    font-size: .8rem;
-}
-
-/* Styling for third section */
-
-.third-section{
-    background-color: hsl(238, 22%, 44%);
-    display: flex;
-    color: #fff;
-}
-
-.third-hero, .form-field{
-    width: 100%;
-    padding: 5rem 0;
-}
-
-.third-hero h2, .third-hero p{
-    width: 70%;
-}
-
-.third-hero p{
-    padding-top: .6rem;
-}
-
-.form-field form input{
-    width: 85%;
-}
-
-.btn button{
-    width: 35%;
-    margin-top: 1rem;
-    margin-left: 0;
-}
-
-/* Styling for the footer */
-footer{
-    background-color: hsl(243, 87%, 12%);
-    color: #fff;
-    padding: 4rem 6rem 4rem 3rem;
-}
-
-.d-fl{
-    display: flex;
-    justify-content: space-between;
-}
-
-.d-fl a{
-    text-decoration: none;
-    color: #fff;
-}
-
-.d-fl a:hover{
-    color: rgb(116, 172, 246);
-}
-
-.d-fl a:active{
-    color: rgb(5, 135, 222);
-}
-
-.pt li{
-    padding-top: .8rem;
-}
-
-#img-pt-1, #img-pt-2{
-    padding-right: 1rem;
-}
-
-#social{
-    display: flex;
-}
-
-ul li a .fa-brands{
-    width: 2rem;
-    height: 2rem;
-    padding: .4rem;
-    border: 0.2px solid #c9c9c9;
-    border-radius: 100%;
-}
-
-ul li .fa-brands{
-    width: 100%;
-    height: 100%;
+  }
+  .header-right-links {
+    gap: 1rem;
+  }
+  .first-hero-section,
+  .second-hero-section {
+    flex-direction: column-reverse;
+  }
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 2rem;
+  }
+  .first-hero-left p {
     text-align: center;
     font-size: 1rem;
-    cursor: pointer;
+    width: 100%;
+  }
+  h1,
+  .first-hero-left p,
+  .first-hero-left form,
+  h2,
+  .second-hero-left p {
+    width: 100%;
+  }
+  .form-top{
+    flex-direction: column;
+  }
+  #input1, #input2{
+    width: 100%;
+    height: 5vh;
+    margin-right: 0;
+  }
+  .btn {
+    width: 100%;
+    height: 5vh;
 }
-
-#social li{
-    padding: .9rem .9rem 0 0;
-}
-
-#social i:hover{
-    border: 1px solid rgb(116, 172, 246);
-}
-
-.footer-logo img{
-    filter: brightness(0) invert(1);
-}
-
-
-
-/* styling for the media query */
-
-@media screen and (max-width: 600px), (max-width: 999.99px){
-    body{
-        padding-top: 0;
-    }
-    header, .first-section,.prl, .third-section{
-        padding: 0 1.3rem;
-    }
-
-    .top-logo img{
-        width: 25vw;
-    }
-
-    .right-link a {
-        padding: 0 .6rem;
-        font-size: .8rem;
-    }
-
-    .first-section {
-        flex-direction: column-reverse;
-    }
-
-    h2, #t-center, form {
-        width: 100%;
-        padding: 1rem 0 0.5rem;
-        text-align: center;
-    }
-
-    .h2{
-        font-size: 1.5rem;
-    }
-
-    form input[type="email"] {
-        width: 90%;
-        margin-top: .7rem;
-    }
-
-    button {
-        width: 90%;
-        margin: .8rem auto 0;
-    }
-
-    .prl {
-        margin-top: 5em;
-        flex-direction: column-reverse;
-    }
-
-    .second-hero{
-        text-align: center;
-    }
-
-    .p{
-        font-size: 1.2rem;
-        text-align: justify;
-        padding: 0.7rem .5rem;
-        width: 100%;
-    }
-
-    .p:last-of-type{
-        padding-bottom: 2rem;
-    }
-
-    #h2{
-        font-size: 1.2rem;
-        text-align: center;
-    }
-
-    #second-img {
-        margin: 5rem auto 0;
-    }
-
-    .small-box {
-        width: 90%;
-        margin: 2rem auto 0;
-        text-align: justify;
-    }
-
-    .circle-image{
-        align-items: center;
-    }
-
-    .founder{
-        padding-top: .4rem;
-    }
-
-    .third-section {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .third-hero{
-            padding: 2rem .5rem .5rem;
-            font-size: .9rem;
-            text-align: center;
-    }
-
-    div #mb-1, div #mb-2{
-        width: 100%;
-        padding: 0.4rem 0 0;
-    }
-
-    .form-field{
-        padding: 0;
-    }
-
-    div #second-email, .btn button{
-        width: 70%;
-    }
-
-    .btn button{
-        margin-bottom: 3rem;
-    }
-
-    footer {
-        padding: 4rem 2rem;
-    }
-
-    .footer-logo img{
-        width: 50vw;
-    }
-
-    .d-fl{
-        flex-direction: column;
-    }
-
-    .pt{
-        padding-top: 2.3rem;
-    }
-
-    .pt:first-of-type{
-        padding-top: 1rem;
-    }
-
-
-    #social{
-        padding-top: 4rem;
-        margin: auto;
-    }
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 4rem;
+  }
+  .second-hero-left p {
+    font-size: 0.9rem;
+      padding: 0.3rem 0;
+  }
+  .text-with-arrow-img {
+    margin: 1rem auto;
+  }
+  .small-box-with-shadow {
+    width: 100%;
+    margin: 3rem auto;
+  }
+  .small-box-with-shadow p{
+    padding: 0;
+  }
+  .image-text h4,
+  .image-text p {
+    font-size: 0.7rem;
+  }
+  .third-hero-section {
+    height: auto;
+    padding: 3rem 20px;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .third-hero-left h3 {
+    font-size: 1.5rem;
+  }
+  .third-hero-left h3,
+  .third-hero-left p {
+    width: 100%;
+    text-align: center;
+  }
+  .third-hero-left p {
+    padding: 1.4rem 0;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  footer {
+    padding: 4.5rem 2rem 2.5rem;
+    font-size: 0.9rem;
+  }
+  .footer-logo {
+    width: 8rem;
+    height: auto;
+  }
+  .d-fl {
+    flex-direction: column;
+  }
+  ul{
+    margin: 1rem 0;
+  }
+  .phone-icon{
+    margin: 1.2rem 0 1rem;
+  }
+  .social {
+    font-size: 1rem;
+    margin: 1.5rem auto 0;
+  }
 }
