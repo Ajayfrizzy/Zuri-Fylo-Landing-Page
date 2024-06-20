@@ -1,31 +1,9 @@
 let inputFieldFirst = document.querySelector("#input1");
 let errorTop = document.querySelector("#error-msg-top");
-//let form1 = document.querySelector(".form-top");
-//let btn1 = document.querySelector(".btn1");
 
 
-//let form2 = document.querySelector(".form-down");
-//let btn2 = document.querySelector(".btn2");
 let inputFieldSecond = document.querySelector("#input2");
 let errorDown = document.querySelector("#error-msg-down");
-
-/*
-form1.addEventListener('submit', (e) => {
-    e.preventDefault();
-}) 
-
-form2.addEventListener("submit", (e) => {
-    e.preventDefault();
-})
-
-btn1.addEventListener("click", (e) => {
-    e.preventDefault();
-})
-
-btn2.addEventListener("click", (e) => {
-    e.preventDefault();
-})*/
-
 
 
 

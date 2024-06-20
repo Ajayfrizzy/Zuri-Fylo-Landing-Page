@@ -11,16 +11,17 @@
 body {
   font-size: 16px;
   font-family: "Raleway", "Open Sans", sans-serif;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   font-weight: 400;
   color: hsl(243, 87%, 12%);
+  margin: auto;
 }
 
 /*  This is the styling that gives Padding on both left and right of the content on the page including the header navlinks     */
 header,
 .first-hero-section,
 .second-hero-section {
-  padding: 0 50px;
+  padding: 0 5rem;
 }
 
 /* This is the styling for the header links */
@@ -248,7 +249,7 @@ h2 {
   background-color: hsl(238, 22%, 44%);
   color: #fff;
   height: 55vh;
-  padding: 0 50px;
+  padding: 0 5rem;
 }
 
 .third-hero-left,
@@ -282,7 +283,7 @@ h2 {
 
 /* This is the styling for footer */
 
-footer {
+.foot {
   background-color: hsl(243, 87%, 12%);
   color: #fff;
   font-weight: 500;
@@ -360,6 +361,7 @@ footer img {
   }
   .nav-links {
     font-size: 0.9rem;
+    height: 10vh;
   }
   .header-right-links {
     gap: 1rem;
@@ -439,7 +441,7 @@ footer img {
     font-size: 1rem;
     line-height: 1.7;
   }
-  footer {
+  .foot {
     padding: 4.5rem 2rem 2.5rem;
     font-size: 0.9rem;
   }
