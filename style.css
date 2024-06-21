@@ -21,7 +21,7 @@ body {
 header,
 .first-hero-section,
 .second-hero-section {
-  padding: 0 5rem;
+  padding: 0 4.5rem;
 }
 
 /* This is the styling for the header links */
@@ -249,7 +249,7 @@ h2 {
   background-color: hsl(238, 22%, 44%);
   color: #fff;
   height: 55vh;
-  padding: 0 5rem;
+  padding: 0 4.5rem;
 }
 
 .third-hero-left,
